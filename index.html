@@ -1,1 +1,124 @@
-Hello World
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!-- Main content -->
+
+<body class="sidebar-mini fixed" style="direction:rtl;">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <h3 class="card-title">
+                    تعديل إعدادات الموقع
+                </h3>
+                <div class="card-body">
+                    <form action="http://localhost:8000/admin_panel/sitesetting" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="_token" value="MARRCdKDIvQPVObxjHDcC20wDOUyLUu1n6M04L31">
+                        <div class="form-group">
+
+                            <label class="control-label">إسم الموقع</label>
+
+                            <input class="form-control" name="namesite" type="text" value="موقع العقارات الأول في الشرق الأوسط">
+                        </div>
+                        <div class="form-group">
+
+                            <label class="control-label">فيسبوك</label>
+
+                            <input class="form-control" name="facebook" type="text" value="www.fb.com/ja3far7asan">
+                        </div>
+                        <div class="form-group">
+
+                            <label class="control-label">تويتر</label>
+
+                            <input class="form-control" name="twitter" type="text" value="www.twitter.com/ja3far_7asan">
+                        </div>
+                        <div class="form-group">
+
+                            <label class="control-label">يوتيوب</label>
+
+                            <input class="form-control" name="youtube" type="text" value="www.youtube.com/ja3far7asan">
+                        </div>
+                        <div class="form-group">
+
+                            <label class="control-label">العنوان</label>
+
+                            <input class="form-control" name="address" type="text" value="اليامون - جنين">
+                        </div>
+                        <div class="form-group">
+
+                            <label class="control-label">موبايل</label>
+
+                            <input class="form-control" name="mobile" type="text" value="(+970) 592 473 151">
+                        </div>
+                        <div class="form-group">
+
+                            <label class="control-label">الايميل</label>
+
+                            <input class="form-control" name="email" type="text" value="ja3far7asan@gmail.com">
+                        </div>
+                        <div class="form-group">
+
+                            <label class="control-label">الشاشة الرئيسية</label>
+
+                            <div class="clearfix"></div>
+                            <br />
+                            <img src="http://localhost:8000/website/slider/abc.jpg" width="100px" height="100px">
+                            <div class="clearfix"></div>
+                            <br />
+                            <input class="form-control" name="main_slider" type="file">
+                        </div>
+                        <div class="form-group">
+
+                            <label class="control-label">وصف الموقع</label>
+
+                            <input class="form-control" name="desc" type="text" value="موقع العقارات الأول في فلسطين">
+                        </div>
+                        <div class="form-group">
+
+                            <label class="control-label">الصورة البديلة</label>
+
+                            <div class="clearfix"></div>
+                            <br />
+                            <img src="http://localhost:8000/website/slider/0000.jpg" width="100px" height="100px">
+                            <div class="clearfix"></div>
+                            <br />
+                            <input class="form-control" name="noimage" type="file">
+                        </div>
+                        <div class="form-group">
+
+                            <label class="control-label">أيقونة الموقع</label>
+
+                            <div class="clearfix"></div>
+                            <br />
+                            <img src="http://localhost:8000/website/slider/android.png" width="100px" height="100px">
+                            <div class="clearfix"></div>
+                            <br />
+                            <input class="form-control" name="shortcuticon" type="file">
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary icon-btn" type="submit">
+                                <i class="fa fa-fw fa-lg fa-check-circle"></i> تعديل إعدادات الموقع </button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Javascripts-->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pace.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
